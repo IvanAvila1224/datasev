@@ -77,10 +77,10 @@ goles_visitante = data['away_score']
 if st.sidebar.checkbox('Goles Visitante'):
     st.markdown("Grafica que muestra la frecuencia del total de goles de visitante en cada partido siendo 0 el numero mas bajo y siendo la frecuencia el numero de partidos")
     fig, ax = plt.subplots()
-    ax.hist(goles_local, bins=35, range=(0, 35))
-    ax.set_xlabel('Goles de local')
+    ax.hist(goles_visitante, bins=35, range=(0, 35))
+    ax.set_xlabel('Goles de Visitante')
     ax.set_ylabel('Frecuencia')
-    ax.set_title('Histograma del número de goles de local')
+    ax.set_title('Histograma del número de goles de visitante')
     st.pyplot(fig)
 
 
